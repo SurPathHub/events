@@ -680,7 +680,7 @@ header .content .countdown {
 
   
   /* ============Register Button================ */
-  .myButton {
+  .RegisterButton {
     margin-top: 50px;
     box-shadow: 0px 10px 14px -7px #1a1003;
     background:linear-gradient(to bottom, #e03a3a 5%, #9c6f14 100%);
@@ -696,12 +696,12 @@ header .content .countdown {
     text-decoration:none;
     text-shadow:0px 1px 0px #cc7f21;
   }
-  .myButton:hover {
+  .RegisterButton:hover {
     background:linear-gradient(to bottom, #9c6f14 5%, #d5e03a 100%);
     background-color:#9c6f14;
     color: white;
   }
-  .myButton:active {
+  .RegisterButton:active {
     position:relative;
     top:1px;
   }
