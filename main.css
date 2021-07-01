@@ -11,6 +11,8 @@ body {
 }
 
 header {
+  padding-top: 8%;
+  padding-bottom: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -649,10 +651,171 @@ body {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
+  
   .dino {
-    width: 10em;
-    height: 12em;
+    width: 8em;
+    height: 10em;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: walk-bounce-animation 1.5s infinite;
+    animation: walk-bounce-animation 1.5s infinite;
+  }
+
+  .dino__head__eye {
+    background-color: #000;
+    border-radius: 50% 50% 46% 54% / 50% 45% 55% 50%;
+    display: block;
+    height: 1em;
+    left: 65%;
+    position: absolute;
+    top: 27%;
+    width: 1em;
+    -webkit-animation: blink-animation 3s infinite;
+    animation: blink-animation 3s infinite;
+    transform: scale(0.5);
+  }
+
+  .dino__body__mid {
+    background-color: #00a652;
+    display: block;
+    height: 97%;
+    left: 13.5%;
+    position: absolute;
+    width: 49%;
+  }
+
+  .floor {
+    background-color: #303030;
+    border-radius: 100%;
+    display: block;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    top: -1.3em;
+    left: -1em;
+    opacity: 0.25;
+    z-index: -1;
+    -webkit-animation: shadow-animation 1.5s infinite;
+    animation: shadow-animation 1.5s infinite;
+    transform: scale(0.5);
+  }
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .dino {
+    width: 8em;
+    height: 10em;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: walk-bounce-animation 1.5s infinite;
+    animation: walk-bounce-animation 1.5s infinite;
+  }
+
+  .dino__head__eye {
+    background-color: #000;
+    border-radius: 50% 50% 46% 54% / 50% 45% 55% 50%;
+    display: block;
+    height: 1em;
+    left: 65%;
+    position: absolute;
+    top: 27%;
+    width: 1em;
+    -webkit-animation: blink-animation 3s infinite;
+    animation: blink-animation 3s infinite;
+    transform: scale(0.5);
+  }
+
+  .dino__body__mid {
+    background-color: #00a652;
+    display: block;
+    height: 97%;
+    left: 13.5%;
+    position: absolute;
+    width: 49%;
+  }
+
+  .floor {
+    background-color: #303030;
+    border-radius: 100%;
+    display: block;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    top: -1.3em;
+    left: -1em;
+    opacity: 0.25;
+    z-index: -1;
+    -webkit-animation: shadow-animation 1.5s infinite;
+    animation: shadow-animation 1.5s infinite;
+    transform: scale(0.5);
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .dino {
+    width: 11em;
+    height: 13em;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: walk-bounce-animation 1.5s infinite;
+    animation: walk-bounce-animation 1.5s infinite;
+  }
+
+  .dino__head__eye {
+    background-color: #000;
+    border-radius: 50% 50% 46% 54% / 50% 45% 55% 50%;
+    display: block;
+    height: 1em;
+    left: 65%;
+    position: absolute;
+    top: 27%;
+    width: 1em;
+    -webkit-animation: blink-animation 3s infinite;
+    animation: blink-animation 3s infinite;
+    transform: scale(0.6);
+  }
+
+  .dino__body__mid {
+    background-color: #00a652;
+    display: block;
+    height: 97%;
+    left: 14%;
+    position: absolute;
+    width: 49%;
+  }
+
+  .floor {
+    background-color: #303030;
+    border-radius: 100%;
+    display: block;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    top: -1.3em;
+    left: -1em;
+    opacity: 0.25;
+    z-index: -1;
+    -webkit-animation: shadow-animation 1.5s infinite;
+    animation: shadow-animation 1.5s infinite;
+    transform: scale(0.7);
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  .dino {
+
+    width: 13em;
+    height: 15em;
     margin: 0 auto;
     position: relative;
     -webkit-animation: walk-bounce-animation 1.5s infinite;
@@ -677,9 +840,65 @@ body {
     background-color: #00a652;
     display: block;
     height: 97%;
-    left: 13%;
+    left: 14%;
     position: absolute;
-    width: 49%;
+    width: 50%;
+  }
+
+  .floor {
+    background-color: #303030;
+    border-radius: 100%;
+    display: block;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    top: -1.3em;
+    left: -1em;
+    opacity: 0.25;
+    z-index: -1;
+    -webkit-animation: shadow-animation 1.5s infinite;
+    animation: shadow-animation 1.5s infinite;
+    transform: scale(0.8);
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .dino {
+
+    width: 16em;
+    height: 20em;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: walk-bounce-animation 1.5s infinite;
+    animation: walk-bounce-animation 1.5s infinite;
+    transition: ease all 0.5s;
+  }
+
+  .dino__head__eye {
+    background-color: #000;
+    border-radius: 50% 50% 46% 54% / 50% 45% 55% 50%;
+    display: block;
+    height: 1em;
+    left: 65%;
+    position: absolute;
+    top: 27%;
+    width: 1em;
+    -webkit-animation: blink-animation 3s infinite;
+    animation: blink-animation 3s infinite;
+    
+  }
+
+  .dino__body__mid {
+    background-color: #00a652;
+  display: block;
+  height: 100%;
+  left: 13%;
+  position: absolute;
+  width: 50%;
   }
 
   .floor {
@@ -698,4 +917,9 @@ body {
     animation: shadow-animation 1.5s infinite;
     transform: scale(0.7);
   }
+
 }
+
+
+
+
