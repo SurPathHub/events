@@ -46,11 +46,11 @@ header .content {
   z-index: 1;
 }
 header .content h1 {
-  transform: scale(2);
+  /* transform: scale(2); */ /* the bug */ 
   -webkit-text-stroke: 0.1px rgb(128, 43, 40);
   -webkit-text-fill-color: rgb(232, 225, 24);
   -webkit-animation: fill 0.5s infinite alternate;
- 
+  
 }
 
 @-webkit-keyframes fill {
@@ -58,37 +58,21 @@ header .content h1 {
   to { -webkit-text-fill-color: rgb(144, 130, 112); }
 }
 header .content h1 {
+  
+  font-size: 10vw;
   font-family: 'Jurassic Park', sans-serif;
 }
-@media screen and (min-width: 480px) {
-  header .content h1 {
-    font-size: 36px;
-  }
-}
-@media screen and (min-width: 768px) {
-  header .content h1 {
-    font-size: 42px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  header .content h1 {
-    font-size: 56px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header .content h1 {
-    font-size: 72px;
-  }
-}
+
 header .content h2 {
   color: rgb(255, 247, 0);
-	font-size: 47px;
+	font-size: 8vw;
 	-webkit-text-stroke: 5px #960000;
 	text-shadow: 0px 1px 4px #23430C;
   
   -webkit-animation: fill 0.5s infinite alternate;
   
 }
+
 header .content h2 span {
   font-family: 'Jurassic Park', sans-serif;
   -webkit-text-stroke: 0.1px rgb(128, 43, 40);
@@ -98,54 +82,16 @@ header .content h2 span {
   margin: 30px 0px;
   -webkit-animation: fill 0.5s infinite alternate;
 }
-@media screen and (min-width: 480px) {
-  header .content h2 {
-    font-size: 56px;
-  }
-}
-@media screen and (min-width: 768px) {
-  header .content h2 {
-    font-size: 72px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  header .content h2 {
-    font-size: 96px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header .content h2 {
-    font-size: 128px;
-  }
-}
+
 header .content .countdown {
   background-color:  #303030;
   color: rgb(223, 255, 81);
   -webkit-text-stroke: 3px rgb(0, 255, 157);
   -webkit-text-fill-color: rgba(96, 255, 81, 0.734);
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 400;
 }
-@media screen and (min-width: 480px) {
-  header .content .countdown {
-    font-size: 42px;
-  }
-}
-@media screen and (min-width: 768px) {
-  header .content .countdown {
-    font-size: 56px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  header .content .countdown {
-    font-size: 72px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header .content .countdown {
-    font-size: 88px;
-  }
-}
+
 @media only screen and (max-width: 767px) {
   header {
     
