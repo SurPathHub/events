@@ -27,7 +27,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color:#464646;
- 
+  transition: ease all .5s;
 }
 
 header:after {
@@ -96,6 +96,7 @@ header .content .countdown {
   header {
     
     background-image: url(imgs/EventBackgroundMobilePhone.jpg);
+    
   }
 	}
 
@@ -121,6 +122,7 @@ header .content .countdown {
     position: relative;
     -webkit-animation: walk-bounce-animation 1.5s infinite;
     animation: walk-bounce-animation 1.5s infinite;
+    transition: ease all .5s;
   }
   
   .dino__head {
@@ -655,13 +657,54 @@ header .content .countdown {
 
 
   /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .dino {
     width: 10em;
-    height: 10em;
+    height: 12em;
     margin: 0 auto;
     position: relative;
     -webkit-animation: walk-bounce-animation 1.5s infinite;
     animation: walk-bounce-animation 1.5s infinite;
+  }
+
+  .dino__head__eye {
+    background-color: #000;
+    border-radius: 50% 50% 46% 54% / 50% 45% 55% 50%;
+    display: block;
+    height: 1em;
+    left: 65%;
+    position: absolute;
+    top: 27%;
+    width: 1em;
+    -webkit-animation: blink-animation 3s infinite;
+    animation: blink-animation 3s infinite;
+    transform: scale(0.7);
+  }
+
+
+ .dino__body__mid {
+    background-color: #00a652;
+    display: block;
+    height: 97%;
+    left: 13%;
+    position: absolute;
+    width: 49%;
+  }
+
+  .floor {
+    background-color: #303030;
+    border-radius: 100%;
+    display: block;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    top: -1.3em;
+    left: -1em;
+    opacity: 0.25;
+    z-index: -1;
+    -webkit-animation: shadow-animation 1.5s infinite;
+    animation: shadow-animation 1.5s infinite;
+    transform: scale(0.7);
   }
 }
