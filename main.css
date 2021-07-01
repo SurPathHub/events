@@ -706,3 +706,16 @@ header .content .countdown {
     top:1px;
   }
   
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .dino {
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: walk-bounce-animation 1.5s infinite;
+    animation: walk-bounce-animation 1.5s infinite;
+  }
+}
