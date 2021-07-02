@@ -72,13 +72,13 @@ header .content h1 {
 }
 
 header .content h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     font-family: "Jurassic Park", sans-serif;
 }
 
 header .content h2 {
     color: rgb(255, 247, 0);
-    font-size: 8vw;
+    font-size: 6vw;
     -webkit-text-stroke: 5px #960000;
     text-shadow: 0px 1px 4px #23430c;
     -webkit-animation: fill 0.5s infinite alternate;
@@ -891,13 +891,15 @@ header .content .countdown {
         animation: shadow-animation 1.5s infinite;
         transform: scale(0.7);
     }
+
+    
 }
 
 
 /*Accordion (FAQ)*/
 
 .faq {
-    margin-top: 5%;
+    margin-top:1%;
 }
 
 .faq a {
@@ -908,7 +910,7 @@ header .content .countdown {
     color: #5dffe1;
     font-family: 'Poppins' sans-serif;
     font-weight: 10;
-    text-decoration: none;
+   
 }
 
 .accordion-body {
