@@ -8,7 +8,9 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "montserrat", sans-serif;
   height: 100%;
@@ -16,6 +18,7 @@ body {
 }
 
 header {
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +49,7 @@ header:after {
   background-color: rgba(34, 34, 34, 0.5);
 }
 header .content {
+  margin-top: 2%;
   position: relative;
   z-index: 1;
 }
@@ -617,7 +621,7 @@ header .content .countdown {
 
 /* ============Register Button================ */
 .RegisterButton {
-  margin-top: 50px;
+  margin-top: 20px;
   box-shadow: 0px 10px 14px -7px #1a1003;
   background: linear-gradient(to bottom, #e03a3a 5%, #9c6f14 100%);
   background-color: #a33401;
@@ -631,6 +635,7 @@ header .content .countdown {
   padding: 13px 32px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #cc7f21;
+ 
 }
 .RegisterButton:hover {
   background: linear-gradient(to bottom, #9c6f14 5%, #d5e03a 100%);
@@ -642,15 +647,19 @@ header .content .countdown {
   top: 1px;
 }
 
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
+  
   .dino {
-    width: 10em;
+
+    width: 8em;
     height: 12em;
     margin: 0 auto;
     position: relative;
     -webkit-animation: walk-bounce-animation 1.5s infinite;
     animation: walk-bounce-animation 1.5s infinite;
+    transition: ease all 0.5s;
   }
 
   .dino__head__eye {
@@ -664,16 +673,185 @@ header .content .countdown {
     width: 1em;
     -webkit-animation: blink-animation 3s infinite;
     animation: blink-animation 3s infinite;
-    transform: scale(0.7);
+    transform: scale(0.4);
+    
   }
 
   .dino__body__mid {
     background-color: #00a652;
+  display: block;
+  height: 101%;
+  left: 13.5%;
+  position: absolute;
+  width: 48%;
+  }
+
+  .floor {
+    background-color: #303030;
+    border-radius: 100%;
     display: block;
-    height: 97%;
-    left: 13%;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    top: -1.3em;
+    left: -1em;
+    opacity: 0.25;
+    z-index: -1;
+    -webkit-animation: shadow-animation 1.5s infinite;
+    animation: shadow-animation 1.5s infinite;
+    transform: scale(0.6);
+  }
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .dino {
+
+    width: 8em;
+    height: 12em;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: walk-bounce-animation 1.5s infinite;
+    animation: walk-bounce-animation 1.5s infinite;
+    transition: ease all 0.5s;
+  }
+
+  .dino__head__eye {
+    background-color: #000;
+    border-radius: 50% 50% 46% 54% / 50% 45% 55% 50%;
+    display: block;
+    height: 1em;
+    left: 65%;
     position: absolute;
-    width: 49%;
+    top: 27%;
+    width: 1em;
+    -webkit-animation: blink-animation 3s infinite;
+    animation: blink-animation 3s infinite;
+    transform: scale(0.4);
+    
+  }
+
+  .dino__body__mid {
+    background-color: #00a652;
+  display: block;
+  height: 101%;
+  left: 13.5%;
+  position: absolute;
+  width: 48%;
+  }
+
+  .floor {
+    background-color: #303030;
+    border-radius: 100%;
+    display: block;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    top: -1.3em;
+    left: -1em;
+    opacity: 0.25;
+    z-index: -1;
+    -webkit-animation: shadow-animation 1.5s infinite;
+    animation: shadow-animation 1.5s infinite;
+    transform: scale(0.6);
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .dino {
+
+    width: 9em;
+    height: 13em;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: walk-bounce-animation 1.5s infinite;
+    animation: walk-bounce-animation 1.5s infinite;
+    transition: ease all 0.5s;
+  }
+
+  .dino__head__eye {
+    background-color: #000;
+    border-radius: 50% 50% 46% 54% / 50% 45% 55% 50%;
+    display: block;
+    height: 1em;
+    left: 65%;
+    position: absolute;
+    top: 27%;
+    width: 1em;
+    -webkit-animation: blink-animation 3s infinite;
+    animation: blink-animation 3s infinite;
+    transform: scale(0.5);
+    
+  }
+
+  .dino__body__mid {
+    background-color: #00a652;
+  display: block;
+  height: 101%;
+  left: 13.5%;
+  position: absolute;
+  width: 48%;
+  }
+
+  .floor {
+    background-color: #303030;
+    border-radius: 100%;
+    display: block;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    top: -1.3em;
+    left: -1em;
+    opacity: 0.25;
+    z-index: -1;
+    -webkit-animation: shadow-animation 1.5s infinite;
+    animation: shadow-animation 1.5s infinite;
+    transform: scale(0.6);
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  .dino {
+
+    width: 10em;
+    height: 14em;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: walk-bounce-animation 1.5s infinite;
+    animation: walk-bounce-animation 1.5s infinite;
+    transition: ease all 0.5s;
+  }
+
+  .dino__head__eye {
+    background-color: #000;
+    border-radius: 50% 50% 46% 54% / 50% 45% 55% 50%;
+    display: block;
+    height: 1em;
+    left: 65%;
+    position: absolute;
+    top: 27%;
+    width: 1em;
+    -webkit-animation: blink-animation 3s infinite;
+    animation: blink-animation 3s infinite;
+    transform: scale(0.5);
+    
+  }
+
+  .dino__body__mid {
+    background-color: #00a652;
+  display: block;
+  height: 101%;
+  left: 13.5%;
+  position: absolute;
+  width: 48%;
   }
 
   .floor {
@@ -692,9 +870,85 @@ header .content .countdown {
     animation: shadow-animation 1.5s infinite;
     transform: scale(0.7);
   }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  
+
+
+  .dino {
+
+    width: 11em;
+    height: 15em;
+    margin: 0 auto;
+    position: relative;
+    -webkit-animation: walk-bounce-animation 1.5s infinite;
+    animation: walk-bounce-animation 1.5s infinite;
+    transition: ease all 0.5s;
+  }
+
+  .dino__head__eye {
+    background-color: #000;
+    border-radius: 50% 50% 46% 54% / 50% 45% 55% 50%;
+    display: block;
+    height: 1em;
+    left: 65%;
+    position: absolute;
+    top: 27%;
+    width: 1em;
+    -webkit-animation: blink-animation 3s infinite;
+    animation: blink-animation 3s infinite;
+    
+  }
+
+  .dino__body__mid {
+    background-color: #00a652;
+  display: block;
+  height: 102%;
+  left: 13.5%;
+  position: absolute;
+  width: 48%;
+  }
+
+  .floor {
+    background-color: #303030;
+    border-radius: 100%;
+    display: block;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    top: -1.3em;
+    left: -1em;
+    opacity: 0.25;
+    z-index: -1;
+    -webkit-animation: shadow-animation 1.5s infinite;
+    animation: shadow-animation 1.5s infinite;
+    transform: scale(0.7);
+  }
+
 }
 
 /*Accordion (FAQ)*/
+.faq {
+  margin-top: 5%;
+  
+  
+  }
+.faq a{
+margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+color: #5dffe1;
+font-family: 'Poppins' sans-serif;
+font-weight: 10;
+text-decoration: none;
+}
+
 .accordion-body {
   display: flex;
   align-items: center;
