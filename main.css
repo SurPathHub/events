@@ -47,7 +47,8 @@ header .content {
   z-index: 1;
 }
 header .content h1 {
-  /* transform: scale(2); */ /* the bug */
+ 
+ 
   -webkit-text-stroke: 0.1px rgb(128, 43, 40);
   -webkit-text-fill-color: rgb(232, 225, 24);
   -webkit-animation: fill 0.5s infinite alternate;
@@ -62,13 +63,14 @@ header .content h1 {
   }
 }
 header .content h1 {
-  font-size: 10vw;
+
+  font-size: 7vw;
   font-family: "Jurassic Park", sans-serif;
 }
 
 header .content h2 {
   color: rgb(255, 247, 0);
-  font-size: 8vw;
+  font-size: 6vw;
   -webkit-text-stroke: 5px #960000;
   text-shadow: 0px 1px 4px #23430c;
 
@@ -101,20 +103,11 @@ header .content .countdown {
 }
 
 /* ============DINOSAUR======================== */
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .dino {
-  width: 16em;
-  height: 20em;
+
+  width: 12em;
+  height: 16em;
   margin: 0 auto;
   position: relative;
   -webkit-animation: walk-bounce-animation 1.5s infinite;
@@ -211,11 +204,11 @@ body {
 
 .dino__body__mid {
   background-color: #00a652;
-  display: block;
-  height: 100%;
-  left: 13%;
-  position: absolute;
-  width: 50%;
+display: block;
+height: 101%;
+left: 13.5%;
+position: absolute;
+width: 48%;
 }
 
 .dino__body__mid:before {
@@ -625,7 +618,7 @@ body {
 
 /* ============Register Button================ */
 .RegisterButton {
-  margin-top: 50px;
+  margin-top: 20px;
   box-shadow: 0px 10px 14px -7px #1a1003;
   background: linear-gradient(to bottom, #e03a3a 5%, #9c6f14 100%);
   background-color: #a33401;
@@ -814,12 +807,13 @@ body {
   
   .dino {
 
-    width: 13em;
-    height: 15em;
+    width: 10em;
+    height: 14em;
     margin: 0 auto;
     position: relative;
     -webkit-animation: walk-bounce-animation 1.5s infinite;
     animation: walk-bounce-animation 1.5s infinite;
+    transition: ease all 0.5s;
   }
 
   .dino__head__eye {
@@ -833,16 +827,17 @@ body {
     width: 1em;
     -webkit-animation: blink-animation 3s infinite;
     animation: blink-animation 3s infinite;
-    transform: scale(0.7);
+    transform: scale(0.5);
+    
   }
 
   .dino__body__mid {
     background-color: #00a652;
-    display: block;
-    height: 97%;
-    left: 14%;
-    position: absolute;
-    width: 50%;
+  display: block;
+  height: 101%;
+  left: 13.5%;
+  position: absolute;
+  width: 48%;
   }
 
   .floor {
@@ -859,7 +854,7 @@ body {
     z-index: -1;
     -webkit-animation: shadow-animation 1.5s infinite;
     animation: shadow-animation 1.5s infinite;
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
 
 }
@@ -867,10 +862,13 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+  
+
+
   .dino {
 
-    width: 16em;
-    height: 20em;
+    width: 11em;
+    height: 15em;
     margin: 0 auto;
     position: relative;
     -webkit-animation: walk-bounce-animation 1.5s infinite;
@@ -895,10 +893,10 @@ body {
   .dino__body__mid {
     background-color: #00a652;
   display: block;
-  height: 100%;
-  left: 13%;
+  height: 102%;
+  left: 13.5%;
   position: absolute;
-  width: 50%;
+  width: 48%;
   }
 
   .floor {
