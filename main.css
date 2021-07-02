@@ -786,7 +786,7 @@ header .content .countdown {
 @media (max-width: 994px) {
   .accordion {
     max-width: 100%;
-    padding: 45px 60px 45px 60px;
+    padding: 45px 60px 90px 60px;
   }
   .accordion .image-box {
     height: 360px;
