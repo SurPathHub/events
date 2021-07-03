@@ -38,6 +38,32 @@ function tick () {
   }
 }
 
+
+// Nav bar
+const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
+  
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");  //Toggle nav
+
+     //Animate links
+  navLinks.forEach((link, index) => {
+    if (link.style.animation){
+      link.style.animation = " ";
+    }
+    else {
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+    }
+  });
+
+    burger.classList.toggle("toggle");
+  });
+ 
+}
+navSlide();
+
 let li = document.querySelectorAll(".faq-text li");
     for (var i = 0; i < li.length; i++) {
       li[i].addEventListener("click", (e)=>{
@@ -50,3 +76,4 @@ let li = document.querySelectorAll(".faq-text li");
        clickedLi.classList.toggle("showAnswer");
       });
     }
+
