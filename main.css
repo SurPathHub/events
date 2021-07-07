@@ -73,19 +73,19 @@ header .content h1 {
 
 header .content h1 {
   font-size: 8vw;
-  font-family: "Jurassic Park", sans-serif;
+  /* font-family: "Jurassic Park", sans-serif; */
 }
 
 header .content h2 {
   color: rgb(255, 247, 0);
   font-size: 6vw;
-  -webkit-text-stroke: 5px #960000;
-  text-shadow: 0px 1px 4px #23430c;
+  -webkit-text-stroke: 0.2rem #960000;
+  text-shadow: 0rem 1rem 4rem #23430c;
   -webkit-animation: fill 0.5s infinite alternate;
 }
 
 header .content h2 span {
-  font-family: "Jurassic Park", sans-serif;
+  /* font-family: "Jurassic Park", sans-serif; */
   -webkit-text-stroke: 0.1px rgb(128, 43, 40);
   -webkit-text-fill-color: rgb(232, 225, 24);
   transform: scale(1);
@@ -111,6 +111,9 @@ header .content .countdown {
 @media only screen and (max-width: 767px) {
   header {
     background-image: url(imgs/EventBackgroundMobilePhone.jpg);
+  }
+  header .content h2 {
+    -webkit-text-stroke: 0.1rem #960000;
   }
 }
 
