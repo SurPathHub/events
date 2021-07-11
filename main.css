@@ -1057,5 +1057,42 @@ div.panel.show {
     flex: 1;
   }
 }
+  footer{
+    background: #111;
+     border-bottom: 5px solid #fff;
+    border-top: 10px solid #008000;
+    height: auto:
+    width:  100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    }
+ .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction column;
+    text-align: center;
+    }
 
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    }
+.socials li{
+    margin: 0 10px;
+    }
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    }
+.socials a i{
+    font size: 1.1rem;
+    }
+.socials a:hover i{
+    color: aqua;
+    }
 /* End of Cards (Challenges) */
