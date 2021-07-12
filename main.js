@@ -65,3 +65,13 @@ function tick () {
       }
       
       });
+
+    // Nav button hide     
+    var links = document.querySelectorAll('.nav-links');
+    var linksLength = links.length
+    
+    for(var i = 0; i < linksLength; i++) {
+      links[i].addEventListener('click', function() {
+        document.getElementById('check').checked = false;
+      });
+    }
