@@ -1315,6 +1315,12 @@ div.panel.show {
   position: relative;
   display: block;
 }
+.studpack-detail {
+  color: #000000;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 2.1875rem;
+}
 
 /* End of Github Student dev pack */
 
