@@ -75,3 +75,12 @@ function tick () {
         document.getElementById('check').checked = false;
       });
     }
+
+    var links1 = document.querySelectorAll('.logo-container');
+    var linksLength1 = links1.length
+    
+    for(var j = 0; j < linksLength1; j++) {
+      links1[j].addEventListener('click', function() {
+        document.getElementById('check').checked = false;
+      });
+    }
