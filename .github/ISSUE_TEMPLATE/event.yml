@@ -1,0 +1,32 @@
+name: Event
+description: Create an incoming event for the community
+title: "<EVENT TITLE>"
+labels: [incoming-event]
+body:
+  - type: input
+    id: event-title
+    attributes:
+      label: Event Title
+    validations:
+      required: true
+  - type: input
+    id: stack
+    attributes:
+      label: Event description
+    validations:
+      required: true
+  - type: input
+    id: event-title
+    attributes:
+      label: Event Title
+    validations:
+      required: true
+  - type: textarea
+    id: event-poster
+    attributes:
+      label: Event Poster 
+    validations:
+      required: false
+  - type: input
+    id: context
+  - type: markdown
