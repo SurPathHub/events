@@ -27,6 +27,3 @@ body:
       label: Event Poster 
     validations:
       required: false
-  - type: input
-    id: context
-  - type: markdown
