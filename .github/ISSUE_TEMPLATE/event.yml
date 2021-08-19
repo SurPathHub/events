@@ -4,21 +4,15 @@ title: "<EVENT TITLE>"
 labels: [incoming-event]
 body:
   - type: input
-    id: event-title
+    id: name
     attributes:
       label: Event Title
     validations:
       required: true
   - type: input
-    id: stack
+    id: description
     attributes:
       label: Event description
-    validations:
-      required: true
-  - type: input
-    id: event-title
-    attributes:
-      label: Event Title
     validations:
       required: true
   - type: textarea
@@ -27,3 +21,7 @@ body:
       label: Event Poster 
     validations:
       required: false
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this event! If you need real-time help, please contact the community manager..
