@@ -10,6 +10,12 @@ body:
     validations:
       required: true
   - type: input
+    id: date
+    attributes:
+      label: Event Date
+    validations:
+      required: true
+  - type: input
     id: description
     attributes:
       label: Event description
