@@ -1,6 +1,6 @@
 name: Event
 description: Create an incoming event for the community
-title: "<EVENT TITLE>"
+title: "EVENT TITLE - VENUE - MM/DD/YYYY"
 labels: [incoming-event]
 body:
   - type: input
